@@ -47,7 +47,7 @@ h1{
     margin-left: 3%;
     margin-bottom: 40px;
     width: 90%;
-    background-color: rgb(176, 162, 255);
+    background-color: rgb(231, 231, 231);
     padding-top: 0px;
     padding-bottom: 0px;
     border-radius: 10px;
@@ -63,21 +63,95 @@ h1{
     background-color: rgb(255, 207, 162);
     margin-top: 0px;
 }
+.Q1{
+    font-weight: 700;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+.Q2{
+    margin-left: 20px;
+    margin-top: 0px;
+    font-size: 14px;
+}
+.shagi{
+    text-decoration: none;
+}
 h3{
     font-size: 25px;
-    margin-left: 30px;
 }
 .pred{
     margin-left: 3%;
 }
-.R1{
+h4{
+    margin-bottom: 15px;
+}
+h5{
+    margin-left: 30px;  
+    font-size: 25px;
+}
+p{
+    margin: 10px 0px 10px 0px;
+}
+ul{
+    margin-top: 0px;
+}
+.ins__h3{
+    margin: 15px 0px 0px 10px; 
+    color: rgb(48, 48, 48);
+    font-family: "Sourse Sans Pro", sans-serif;
+}
+.ins__img{
+    margin-left: 10px;
+}
+.ins__p{
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.shagi{
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 165px;
+    margin-left: 30px;
+}
+.shag{
+    display: flex;
+    width: 899px;
+}
+.ins{
+    box-shadow: 0px 5px 10px gray;
+    border-radius: 5px;
     width: 300px;
-    box-shadow:  0px 5px 10px gray;
+    
+}
+.rec{
+    margin-left: 10px;
+}
+.rec__z{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.rec__li{
+    text-decoration: solid;
+    font-family: "Sourse Sans Pro", sans-serif;
+    font-weight: 400px;
+}
+.line{
+    width: 100%;
+    background-color: black;
+    height: 2px;
+    border-radius: 10%;
+}
+.R1{
+    width: 330px;
     padding: 10px 10px 10px 10px;
+    box-shadow:  0px 5px 10px gray;
     border-radius: 5%;
 }
 .R0{
-    margin: 10px 130px 10px 130px;
+    margin: 10px 100px 10px 100px;
     display: grid;
     grid-auto-flow: row dense;
     grid-template-columns: 2fr 1fr;
