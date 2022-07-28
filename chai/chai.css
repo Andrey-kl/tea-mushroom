@@ -1,13 +1,11 @@
 body{
     margin: 0px;
 }
-.div__header{
-    background-color: black;
-    width: 100px 200px;
-    background: rgb(0, 0, 0);
-    padding: 3%;
-    box-shadow: 0px 5px 10px dimgray;
-    display: flex;
+.foot{
+    box-shadow: 0px 5px 10px slategray;
+    background-color: rgb(34, 34, 34);
+    padding: 17px 0px;
+    width: 100%;
 }
 .p__header{
     color: white;
@@ -15,19 +13,67 @@ body{
     margin-left: 30px;
 }
 header{
-    width:100%;
-    height: 50px;
+    display: flex;
+    height: 100px;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin: 0 100px;
+    background-color: rgb(34, 34, 34);
+}
+.header__a{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.what{
+    display: flex;
+    text-align: center;
+    margin-top: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+.a1{
+    padding: 30px 30px;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: "Sourse Sans Pro", sans-serif;
+    font-weight: 600;
+    color: white;
+    transition: all 1.2s ease;
+}
+.a1:link,.a1:visited{
+    display: inline-block;
+    background-color: rgb(34, 34, 34);
+    border-radius: 50px;
+}
+.a1:hover{
+    color: rgb(0, 20, 56);
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 34, 34);
+    border-radius: 30px;
+    padding: 28px 28px;
+}
+.a1:active{
+    transition: 1ms ease;
+    background-color: rgb(116, 116, 116);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    transform: scale(1.2);
 }
 .boom{
-    padding: 0px 20px;
+    padding: 0px 1px;
     margin: 0px;
-    width: 30px;
-    height: 20px;
+    width: 0px;
+    height: 1px;
     background-color: rgb(0, 0, 0);
     border-radius: 5%;
     animation-name: blackb;
     animation-duration: 6s;
-    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -36,7 +82,10 @@ header{
 @keyframes blackb{
     0%{
         left: 0px;
-        border-radius: 10px;
+        border-radius: 50px;
+    }
+    25%{
+        background-color: rgb(34, 34, 34);
     }
     50%{
         background-color: rgb(58, 58, 58);
@@ -48,8 +97,7 @@ header{
     100%{
         left: 400px;
         margin-left: 0px;
-        width: 88%;
-        
+        width: 100%;
     }
 }
 p{
@@ -137,17 +185,17 @@ h3{
     transform: scale(2 1);
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55)
 }
-a:link,a:visited{
+.pred__a:link,.pred__a:visited{
     display: inline-block;
     background-color: white;
     border-radius: 70px;
 }
-a:hover{
+.pred__a:hover{
     color: rgb(0, 20, 56);
     background-color: rgb(122, 219, 219);
     border-radius: 5px;
 }
-a:active{
+.pred__a:active{
     transition: all 0.01s ease;
     background-color: rgb(55, 202, 202);
     padding: 4px 10px;
