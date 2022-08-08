@@ -44,26 +44,35 @@ header{
     font-family: "Sourse Sans Pro", sans-serif;
     font-weight: 600;
     color: white;
-    transition: all 1.2s ease;
+    transition: all 1s ease;
 }
 .a1:link,.a1:visited{
     display: inline-block;
     background-color: rgb(34, 34, 34);
     border-radius: 50px;
+    border-color: rgb(255, 255, 255);
+    border-width: 10px;
+    /*
+ box-shadow: 2px 2px 5px #000000, -2px -2px 5px #585858,
+    inset -2px -2px 4px #353535, inset 2px 2px 4px #000000;
+*/
 }
 .a1:hover{
     color: rgb(0, 20, 56);
     background-color: rgb(255, 255, 255);
     color: rgb(34, 34, 34);
+    transform: scale(1.1);
     border-radius: 30px;
     padding: 28px 28px;
+    box-sizing: 10px;
+    border: 3px rgb(46, 46, 46) solid;
 }
 .a1:active{
     transition: 1ms ease;
     background-color: rgb(116, 116, 116);
     color: rgb(255, 255, 255);
     border-radius: 50px;
-    transform: scale(1.2);
+    transform: scale(1.4);
 }
 .boom{
     padding: 0px 1px;
@@ -82,17 +91,7 @@ header{
 @keyframes blackb{
     0%{
         left: 0px;
-        border-radius: 50px;
-    }
-    25%{
-        background-color: rgb(34, 34, 34);
-    }
-    50%{
-        background-color: rgb(58, 58, 58);
-    }
-    75%{
-        background-color: rgb(126, 126, 126);
-        border-radius: 50px;
+        border-radius: 3px;
     }
     100%{
         left: 400px;
@@ -108,7 +107,7 @@ p{
     width: 1000px;
     background-color: rgb(255, 255, 255);
     margin-top: 60px;
-    border-radius: 3px;
+    border-radius: 0px 0px 3px 3px;
     box-shadow: 0px 5px 10px slategray;
     margin-bottom: 60px;
 }
@@ -141,7 +140,8 @@ h1{
     padding-top: 0px;
     padding-bottom: 0px;
     border-radius: 10px;
-    box-shadow: 0px 5px 10px gray;
+    box-shadow: 0px 5px 10px gray,
+    inset -2px -2px 1px 1px rgb(112, 112, 112);
 }
 .one__img{
     width: 70%;
@@ -175,6 +175,7 @@ h3{
 }
 .pred{
     margin-left: 3%;
+    width: 900px;
 }
 .pred__a{
     text-decoration: none;
@@ -264,6 +265,7 @@ ul{
     border-radius: 5px;
     width: 320px;
     padding: 10px 15px 10px 15px;
+    
 }
 .Q3{
     margin: 0px 0px 30px 30px;
@@ -344,10 +346,81 @@ margin-bottom: 30px;
     gap: 10px;
     padding: 5px 50px;
 }
+.mark{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin-bottom: 50px; 
+}
+.a2{
+    transition: all 0.6s ease;
+    width: 270px;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px grey;
+    z-index: 1;
+    border-radius: 9px;
+    transform: translateY(9px);
+    transition: all 0.5s ease-in-out;
+}
+.a2:hover{
+   border: 1px solid #505050;
+   box-shadow: 0px;
+   border-radius: 5%;
+   width: 271px;
+}
+.Badaboom::after {
+    content: "Это продукт естественного брожения. При приготовлении Пермского чайного кваса не используются концентраты, синтетические стимуляторы и ускорители роста. В состав чайного кваса входят: настой чайного гриба, иван-чай, натуральный цветочный мёд, питьевая вода, обогащённая кремнием.";
+    position: absolute;
+    width: 200px;
+    top: calc(100% - 18%);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(110, 109, 109);
+    border-radius: 5%;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+    visibility: hidden;
+    display: block;
+}
+.Badaboom{   
+    color: rgb(11, 0, 49);
+    text-decoration: none;
+}
+.Badaboom:hover::after{
+
+   padding: 20px 10px;
+   opacity: 1;
+   visibility: visible;
+   transform: translateY(-10px);
+   transition: .3s linear;
+   animation: odsoky 0.1s ease-in-out infinite  alternate;
+}
+@keyframes odsoky {
+    0%{
+      transform: translateY(60px);	
+    }
+  
+    100%{
+      transform: translateY(1px);
+      background-color: rgb(240, 240, 240);	
+    }
+}
+.mark__p{
+    font-family: "Sourse Sans Pro", sans-serif;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.mark__img{
+    margin-left: 3%;
+    width: 94%;
+    border-radius: 5px;
+}
 footer{
     height: 50px;
-width: 100%;
-background-color: black;
+    width: 100%; 
+    background-color: black;
 }
 .footer__p{
     display: flex;
@@ -449,6 +522,16 @@ width: 600px;
     }
     .sek__v{
         margin-left: 3%;
+    }
+    .a1{
+        width: 30px;
+        font-size: 13px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header__a{
+        display: flex;
+        flex-wrap: wrap;
     }
 
 }
