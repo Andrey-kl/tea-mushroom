@@ -110,6 +110,7 @@ p{
     border-radius: 0px 0px 3px 3px;
     box-shadow: 0px 5px 10px slategray;
     margin-bottom: 60px;
+    transition: all 1s ease;
 }
 .sek__v{
     margin-left: 3%;
