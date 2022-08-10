@@ -72,7 +72,7 @@ header{
     background-color: rgb(116, 116, 116);
     color: rgb(255, 255, 255);
     border-radius: 50px;
-    transform: scale(1.4);
+    transform: scale(0.8);
 }
 .boom{
     padding: 0px 1px;
@@ -467,9 +467,11 @@ border-color: transparent transparent #d1d1d1 transparent;
 что то пошло не по плану
 */
 footer{
-    height: 50px;
+    height: 100%;
     width: 100%; 
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
 }
 .footer__p{
     display: flex;
@@ -579,6 +581,12 @@ width: 600px;
     .osn{
         width: 340px;
         margin: 40px 0px 40px 0px;
+    }
+    .a1:hover{
+    transform: scale(0.7);
+    padding: 18px 18px;
+    border: 3px rgb(46, 46, 46) solid;
+    margin: 0px 0px;
     }
     .what{
     margin-top: 0px;
