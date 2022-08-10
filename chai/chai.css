@@ -4,7 +4,7 @@ body{
 .foot{
     box-shadow: 0px 5px 10px slategray;
     background-color: rgb(34, 34, 34);
-    padding: 17px 0px;
+    padding: 1.7% 0px;
     width: 100%;
 }
 .p__header{
@@ -14,9 +14,9 @@ body{
 }
 header{
     display: flex;
-    height: 100px;
+    height: 10%;
     animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-    margin: 0 100px;
+    margin: 0 10%;
     background-color: rgb(34, 34, 34);
 }
 .header__a{
@@ -112,7 +112,7 @@ p{
     margin-bottom: 60px;
 }
 .sek__v{
-    margin-left: 30px;
+    margin-left: 3%;
     font-size: 16px;
 }
 h1,h2,h3,h4,h5,h6{
@@ -140,9 +140,10 @@ h1{
     padding-top: 0px;
     padding-bottom: 0px;
     border-radius: 10px;
-    box-shadow: 0px 5px 10px gray,
-    inset -2px -2px 1px 1px rgb(112, 112, 112);
+    box-shadow: 5px 5px 6px grey;
+    transition: all 2s ease;
 }
+/*мне люди должны сказать спасибо*/
 .one__img{
     width: 70%;
 }
@@ -157,13 +158,16 @@ h1{
     font-family: "Sourse Sans Pro", sans-serif;
     font-weight: 700;
     font-size: 22px;
-    margin-top: 30px;
-    margin-left: 20px;
+    margin-top: 3%;
+    margin-left: 3%;
     margin-bottom: 0px;
 }
 .Q2{
-    margin-left: 20px;
-    margin-top: 0px;
+    margin: 0px 0px 30px 3%;
+    font-size: 14px;
+}
+.Q3{
+    margin: 0px 0px 30px 3%;
     font-size: 14px;
 }
 .shagi{
@@ -205,11 +209,11 @@ h4{
     margin-bottom: 15px;
 }
 h5{
-    margin-left: 30px;  
+    margin-left: 3%;  
     font-size: 25px;
 }
 h6{
-    margin: 30px 0px 0px 30px;
+    margin: 30px 0px 0px 3%;
     font-size: 25px;
 }
 p{
@@ -267,17 +271,12 @@ ul{
     padding: 10px 15px 10px 15px;
     
 }
-.Q3{
-    margin: 0px 0px 30px 30px;
-    font-size: 14px;
-}
 .rec{
-    margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 3%;
 }
 .rec__z{
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: 3%;
 }
 .rec__li{
     text-decoration: solid;
@@ -350,11 +349,33 @@ margin-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
+    align-items: center;
     margin-bottom: 50px; 
+
+}
+.mark__p{
+    font-family: "Sourse Sans Pro", sans-serif;
+    margin-left: 3%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.mark__p2{
+text-align: center;
+font-size: 18px;
+font-family: fantasy;
+}
+.mark__p2:hover{
+    color: blueviolet;
+}
+.mark__img{
+    margin-left: 0%;
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
 }
 .a2{
     transition: all 0.6s ease;
     width: 270px;
+    height: 100%;
     background-color: white;
     border-radius: 5%;
     box-shadow: 5px 5px 10px grey;
@@ -362,43 +383,64 @@ margin-bottom: 30px;
     border-radius: 9px;
     transform: translateY(9px);
     transition: all 0.5s ease-in-out;
+    margin-bottom: 30px;
+    text-decoration: none;
+    transition: all 2s ease;
 }
 .a2:hover{
    border: 1px solid #505050;
-   box-shadow: 0px;
-   border-radius: 5%;
-   width: 271px;
+}
+/*
+.bada2{
+    content: " ";
+    width: 0;
+    height: 0;
+    
+    border-style: solid;
+    border-width: 12px 12.5px 0 12.5px;
+    border-color: #333 transparent transparent transparent;
+  
+    position: absolute;
+    left: 30%;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 10px 17.3px 10px;
+border-color: transparent transparent #d1d1d1 transparent;
 }
 .Badaboom::after {
     content: "Это продукт естественного брожения. При приготовлении Пермского чайного кваса не используются концентраты, синтетические стимуляторы и ускорители роста. В состав чайного кваса входят: настой чайного гриба, иван-чай, натуральный цветочный мёд, питьевая вода, обогащённая кремнием.";
     position: absolute;
-    width: 200px;
+    width: 220px;
     top: calc(100% - 18%);
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(110, 109, 109);
     border-radius: 5%;
     color: rgb(0, 0, 0);
     font-size: 14px;
     font-family: 'Comfortaa', cursive;
     visibility: hidden;
     display: block;
+
 }
+*/
+
 .Badaboom{   
-    color: rgb(11, 0, 49);
+    color: black;
     text-decoration: none;
 }
+/*
 .Badaboom:hover::after{
 
    padding: 20px 10px;
    opacity: 1;
    visibility: visible;
    transform: translateY(-10px);
-   transition: .3s linear;
-   animation: odsoky 0.1s ease-in-out infinite  alternate;
+   transition: 0.1s linear;
+   animation: odsoky 1.2s ease-in-out infinite  alternate;
 }
 @keyframes odsoky {
     0%{
-      transform: translateY(60px);	
+      transform: translateY(6px);	
     }
   
     100%{
@@ -406,17 +448,8 @@ margin-bottom: 30px;
       background-color: rgb(240, 240, 240);	
     }
 }
-.mark__p{
-    font-family: "Sourse Sans Pro", sans-serif;
-    margin-left: 30px;
-    font-size: 20px;
-    font-weight: 600;
-}
-.mark__img{
-    margin-left: 3%;
-    width: 94%;
-    border-radius: 5px;
-}
+что то пошло не по плану
+*/
 footer{
     height: 50px;
     width: 100%; 
@@ -434,6 +467,9 @@ footer{
 @media (max-width: 1040px) {
     .osn{
         width: 800px;
+    }
+    .pred{
+        width: 700px;
     }
     .ins{
         width: 258px;
@@ -455,6 +491,19 @@ footer{
 @media (max-width: 840px) {
     .osn{
         width: 600px;
+    }
+    .pred{
+        width: 500px;
+    }
+    .what{
+        margin-top: 0px;
+        width: 60px;
+        height: 60px;
+    }
+    .a1{
+        width: auto;
+        padding: 20px 20px;
+        font-size: 21px;
     }
     .shagi{
         display: flex;
@@ -494,10 +543,37 @@ width: 600px;
         margin: 0px 0px 100px 0px;
     }
 }
+@media (max-width: 650px){
+    .osn{
+        width: 450px;
+    }
+    .what{
+        margin-top: 7px;
+    width: 50px;
+    height: 50px;
+    }
+    .pred{
+        width: 400px;
+    }
+    .shag{
+        width: 450px;
+    }
+}
 @media (max-width: 360px){
     .osn{
         width: 340px;
         margin: 40px 0px 40px 0px;
+    }
+    .what{
+    margin-top: 0px;
+    width: 40px;
+    height: 40px;
+    }
+    .pred{
+        width: 300px;
+    }
+    .pred__a{
+        padding: 0px;
     }
     .ins{
         width: 250px;
@@ -524,10 +600,17 @@ width: 600px;
         margin-left: 3%;
     }
     .a1{
-        width: 30px;
+        width: auto;
         font-size: 13px;
+        padding: 5px 5px;
         display: flex;
         flex-wrap: wrap;
+    }
+.foot{
+padding: 10px 0px;
+}
+    .a0{
+ width: auto;
     }
     .header__a{
         display: flex;
